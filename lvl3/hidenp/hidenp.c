@@ -14,9 +14,10 @@ int	main(int ac, char **av)
 	int j = 0;
 	int count = 0;
 
-	int len = ft_strlen(av[1]);
+	
 	if (ac == 3)
 	{
+		int len = ft_strlen(av[1]);
 		while (av[1][i])
 		{
 			while (av[2][j])
@@ -24,6 +25,7 @@ int	main(int ac, char **av)
 				if (av[1][i] == av[2][j])
 				{
 					count++;
+					j++;
 					break;
 				}
 				j++;
